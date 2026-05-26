@@ -1,0 +1,25 @@
+{
+  "name": "AutoSSH",
+  "version": "0.1.0",
+  "description": "SSH隧道管理器 - 配置、自动连接和管理SSH隧道",
+  "author": "jelin",
+  "main": "index.html",
+  "preload": "preload/services.js",
+  "logo": "logo.png",
+  "development": {
+    "main": "http://localhost:5173"
+  },
+  "features": [
+    {
+      "code": "autossh",
+      "explain": "SSH隧道管理",
+      "icon": "logo.png",
+      "cmds": [
+        "ssh",
+        "tunnel",
+        "autossh",
+        "SSH隧道"
+      ]
+    }
+  ]
+}

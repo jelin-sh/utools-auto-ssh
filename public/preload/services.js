@@ -1,0 +1,30 @@
+const dataStore = require('./data-store')
+const sshManager = require('./ssh-manager')
+
+window.services = {
+  // Host CRUD
+  createHost: dataStore.createHost,
+  getHosts: dataStore.getHosts,
+  getHost: dataStore.getHost,
+  updateHost: dataStore.updateHost,
+  deleteHost: dataStore.deleteHost,
+
+  // Tunnel CRUD
+  createTunnel: dataStore.createTunnel,
+  getTunnels: dataStore.getTunnels,
+  getTunnel: dataStore.getTunnel,
+  updateTunnel: dataStore.updateTunnel,
+  deleteTunnel: dataStore.deleteTunnel,
+
+  // Password
+  getPassword: dataStore.getPassword,
+
+  // SSH Manager
+  connectTunnel: sshManager.connectTunnel,
+  disconnectTunnel: sshManager.disconnectTunnel,
+  disconnectAll: sshManager.disconnectAll,
+  getTunnelStatus: sshManager.getTunnelStatus,
+  getAllStatuses: sshManager.getAllStatuses,
+  onStatusChange: sshManager.onStatusChange,
+  autoConnectAll: sshManager.autoConnectAll
+}

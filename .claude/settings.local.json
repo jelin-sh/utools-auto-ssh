@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "mcp__web-reader__webReader",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(git add *)"
+    ]
+  }
+}
