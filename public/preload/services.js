@@ -28,3 +28,8 @@ window.services = {
   onStatusChange: sshManager.onStatusChange,
   autoConnectAll: sshManager.autoConnectAll
 }
+
+// Auto-connect on plugin startup (preload runs before renderer mounts).
+// This handles "跟随主程序自动运行" — tunnels connect when uTools starts,
+// not only when the user opens the plugin UI.
+sshManager.autoConnectAll()
